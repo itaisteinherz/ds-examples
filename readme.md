@@ -22,9 +22,9 @@ $ npm start
 
 ### Running the different examples
 
-If you connect to the controller to your computer using bluetooth, you can only access the buttons and D-pads, which means you will only be able to run the `basic.js` example.
+If you connect the controller to your computer using bluetooth, you can only access the buttons and D-pads, which means you will only be able to run the `basic.js` example.
 
-To run the rest of the examples (`flash.js`, `light.js`, `rumble.js` and `touchpad.js`), connect the controller to your computer using a micro usb cable, which will allow you to access the touchpad, the main LED of the controller and its rumble motors.
+To run the rest of the examples (`flash.js`, `light.js`, `rumble.js` and `touchpad.js`), connect the controller to your computer using a micro-USB cable, which will allow you to access the touchpad, the main LED of the controller and its rumble motors.
 
 
 ## License
