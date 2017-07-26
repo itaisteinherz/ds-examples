@@ -1,0 +1,32 @@
+{
+	"name": "ds-examples",
+	"version": "1.0.0",
+	"description": "DualShock 4 examples",
+	"license": "MIT",
+	"repository": "itaisteinherz/dualshock-examples",
+	"author": "Itai Steinherz <itaisteinherz@gmail.com>",
+	"scripts": {
+		"start": "node index.js",
+		"test": "xo"
+	},
+	"keywords": [
+		"dualshock",
+		"playstation",
+		"controller"
+	],
+	"dependencies": {
+		"color": "^2.0.0",
+		"dualshock-controller": "^1.1.1",
+		"execa": "^0.7.0",
+		"inquirer": "^3.2.1",
+		"robotjs": "^0.4.7"
+	},
+	"devDependencies": {
+		"xo": "^0.18.2"
+	},
+	"xo": {
+		"rules": {
+			"quotes": ["error", "double"]
+		}
+	}
+}
