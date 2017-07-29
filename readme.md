@@ -1,4 +1,4 @@
-# ds-examples
+# ds-examples [![Build Status](https://travis-ci.org/itaisteinherz/ds-examples.svg?branch=master)](https://travis-ci.org/itaisteinherz/ds-examples)
 
 > Various examples using the DualShock 4 controller.
 
