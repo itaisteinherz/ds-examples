@@ -10,8 +10,7 @@
 const dualShock = require("dualshock-controller");
 
 const controller = dualShock({
-	config: "dualShock4-alternate-driver",
-	analogStickSmoothing: true
+	config: "dualShock4-alternate-driver"
 });
 
 controller.on("l2:analog", intensity => {

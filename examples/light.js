@@ -10,8 +10,7 @@ const dualShock = require("dualshock-controller");
 const Color = require("color");
 
 const controller = dualShock({
-	config: "dualShock4-alternate-driver",
-	analogStickSmoothing: true
+	config: "dualShock4-alternate-driver"
 });
 
 let h = 0;

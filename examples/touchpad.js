@@ -11,8 +11,7 @@ const dualShock = require("dualshock-controller");
 const robot = require("robotjs");
 
 const controller = dualShock({
-	config: "dualShock4-alternate-driver",
-	analogStickSmoothing: true
+	config: "dualShock4-alternate-driver"
 });
 
 let mousePressed = false;
