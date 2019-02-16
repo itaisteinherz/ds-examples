@@ -7,14 +7,16 @@
 ```
 $ git clone https://github.com/itaisteinherz/ds-examples.git
 $ cd ds-examples
-$ npm install
+$ yarn
 ```
+
+Note that using npm instead of yarn currently fails because of [an issue with `node-hid`](https://github.com/node-hid/node-hid/issues/266) (I've already opened a PR to resolve this in `node-dualshock-controller` - [rdepena/node-dualshock-controller#82](https://github.com/rdepena/node-dualshock-controller/pull/82)).
 
 
 ## Usage
 
 ```
-$ npm start
+$ node index.js
 ```
 
 

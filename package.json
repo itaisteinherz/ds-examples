@@ -5,24 +5,36 @@
 	"license": "MIT",
 	"repository": "itaisteinherz/dualshock-examples",
 	"author": "Itai Steinherz <itaisteinherz@gmail.com>",
+	"engines": {
+		"node": ">=4"
+	},
 	"scripts": {
-		"start": "node index.js",
 		"test": "xo"
 	},
 	"keywords": [
 		"dualshock",
 		"playstation",
-		"controller"
+		"controller",
+		"examples",
+		"control",
+		"light",
+		"led",
+		"motor",
+		"rumble",
+		"touchpad"
 	],
 	"dependencies": {
-		"color": "^2.0.0",
+		"color": "^3.1.0",
 		"dualshock-controller": "^1.1.1",
-		"execa": "^0.7.0",
-		"inquirer": "^3.2.1",
-		"robotjs": "^0.4.7"
+		"execa": "^1.0.0",
+		"inquirer": "^6.2.2",
+		"robotjs": "^0.5.1"
 	},
 	"devDependencies": {
-		"xo": "^0.18.2"
+		"xo": "^0.24.0"
+	},
+	"resolutions": {
+		"node-hid": "0.7.7"
 	},
 	"xo": {
 		"rules": {

@@ -1,10 +1,10 @@
 "use strict";
-//
-// Light example
-//
-// This example will make your controller's LED light up
-// in the colors of the rainbow.
-//
+/**
+ * 	Light example
+ *
+ * 	This example will make your controller's LED light up
+ * 	in the colors of the rainbow.
+ */
 
 const dualShock = require("dualshock-controller");
 const Color = require("color");

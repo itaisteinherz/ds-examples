@@ -1,18 +1,17 @@
 "use strict";
-//
-// Basic example
-//
-// This example turns your left D-pad into your cursor,
-// and the l1 and r1 butttons to your left and right mouse
-// butttons, respectively.
-//
+/**
+ * 	Basic example
+ *
+ * 	This example turns your left D-pad into your cursor,
+ * 	and the l1 and r1 butttons to your left and right mouse
+ * 	butttons, respectively.
+ */
 
 const dualShock = require("dualshock-controller");
 const robot = require("robotjs");
 
 const controller = dualShock({
-	config: "dualShock4-alternate-driver",
-	analogStickSmoothing: true
+	config: "dualShock4-alternate-driver"
 });
 
 let mousePressed = false;

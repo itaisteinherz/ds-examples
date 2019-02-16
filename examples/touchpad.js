@@ -1,11 +1,11 @@
 "use strict";
-//
-// Touchpad example
-//
-// This example will turn your controller's touchpad into a
-// trackpad for your computer, and will allow you to click
-// the left and right buttons using 1 and 2 fingers, respectively.
-//
+/**
+ * 	Touchpad example
+ *
+ * 	This example will turn your controller's touchpad into a
+ * 	trackpad for your computer, and will allow you to click
+ * 	the left and right buttons using 1 and 2 fingers, respectively.
+ */
 
 const dualShock = require("dualshock-controller");
 const robot = require("robotjs");
