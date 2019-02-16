@@ -10,7 +10,7 @@ $ cd ds-examples
 $ yarn
 ```
 
-Note that using npm instead of yarn currently fails because of [an issue with `node-hid`](https://github.com/node-hid/node-hid/issues/266) (I've already opened a PR to resolve this in `node-dualshock-controller` - [rdepena/node-dualshock-controller#82](https://github.com/rdepena/node-dualshock-controller/pull/82)).
+_Note that using npm instead of yarn currently fails because of [an issue with `node-hid`](https://github.com/node-hid/node-hid/issues/266) (I've already opened a PR to resolve this in `node-dualshock-controller` - [rdepena/node-dualshock-controller#82](https://github.com/rdepena/node-dualshock-controller/pull/82))._
 
 
 ## Usage
