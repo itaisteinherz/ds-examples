@@ -6,7 +6,7 @@
 	"repository": "itaisteinherz/dualshock-examples",
 	"author": "Itai Steinherz <itaisteinherz@gmail.com>",
 	"engines": {
-		"node": ">=4"
+		"node": ">=8"
 	},
 	"scripts": {
 		"test": "xo"

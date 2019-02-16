@@ -2,4 +2,5 @@ language: node_js
 node_js:
   - "10"
   - "8"
-  - "4"
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
