@@ -3,7 +3,7 @@
 	"version": "2.0.0",
 	"description": "DualShock 4 examples",
 	"license": "MIT",
-	"repository": "itaisteinherz/dualshock-examples",
+	"repository": "itaisteinherz/ds-examples",
 	"author": "Itai Steinherz <itaisteinherz@gmail.com>",
 	"engines": {
 		"node": ">=8"
