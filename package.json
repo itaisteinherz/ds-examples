@@ -34,7 +34,7 @@
 		"xo": "^0.24.0"
 	},
 	"resolutions": {
-		"node-hid": "0.7.7"
+		"node-hid": "^0.7.7"
 	},
 	"xo": {
 		"rules": {
