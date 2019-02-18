@@ -8,6 +8,7 @@
  */
 
 const dualShock = require("dualshock-controller");
+const exitHook = require("exit-hook");
 
 const controller = dualShock({
 	config: "dualShock4-alternate-driver"
@@ -32,8 +33,8 @@ controller.on("touchpad:hold", () => {
 	});
 });
 
-// Turn off the rumble motors when the program is terminated.
-const exit = () => {
+// Turn off the rumble motors when the process is terminated
+exitHook(() => {
 	try {
 		controller.setExtras({
 			rumbleLeft: 0,
@@ -42,7 +43,4 @@ const exit = () => {
 	} catch (_) {}
 
 	process.exit(0); // eslint-disable-line unicorn/no-process-exit
-};
-
-process.on("SIGINT", exit);
-process.on("SIGTERM", exit);
+});

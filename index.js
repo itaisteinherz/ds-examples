@@ -5,6 +5,7 @@ const path = require("path");
 
 const inquirer = require("inquirer");
 const execa = require("execa");
+const exitHook = require("exit-hook");
 
 const prompt = inquirer.createPromptModule();
 
@@ -34,12 +35,9 @@ prompt(question).then(answer => {
 	childProcess.stdout.pipe(process.stdout);
 });
 
-// Forward exit code to child process
-const exitChildProcess = exitCode => {
+// Pass on exit code to child process
+exitHook(exitCode => {
 	if (childProcess) {
 		childProcess.kill(exitCode);
 	}
-};
-
-process.on("SIGINT", exitChildProcess);
-process.on("SIGTERM", exitChildProcess);
+});

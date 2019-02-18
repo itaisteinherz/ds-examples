@@ -7,6 +7,7 @@
  */
 
 const dualShock = require("dualshock-controller");
+const exitHook = require("exit-hook");
 
 const controller = dualShock({
 	config: "dualShock4-alternate-driver"
@@ -20,8 +21,8 @@ controller.setExtras({
 	flashOff: 50 // 0-255 (Flash off time)
 });
 
-// Turn off the LED when the program is terminated.
-const exit = () => {
+// Turn off the LED when the process is terminated
+exitHook(() => {
 	controller.setExtras({
 		flashOn: 10,
 		flashOff: 1000
@@ -30,7 +31,4 @@ const exit = () => {
 	setTimeout(() => {
 		process.exit(0); // eslint-disable-line unicorn/no-process-exit
 	}, 100);
-};
-
-process.on("SIGINT", exit);
-process.on("SIGTERM", exit);
+});

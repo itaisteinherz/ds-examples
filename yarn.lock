@@ -1014,6 +1014,11 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exit-hook@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/exit-hook/-/exit-hook-2.0.0.tgz#b89f6f69b7d080efc2807c66a85957722637db92"
+  integrity sha512-usCR1VCwZTqwnGjf2tZ4RlkM+E8W7sss2DXjXEBLpd5A9gOY9z/iJhVr2mFkk0o816tZqpuXCkcSTVzAdVXAXw==
+
 expand-brackets@^2.1.4:
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/expand-brackets/-/expand-brackets-2.1.4.tgz#b77735e315ce30f6b6eff0f83b04151a22449622"
